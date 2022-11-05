@@ -6,15 +6,20 @@ body{
 
 }
 
+button{
+  color: black;
+}
+
 .container{
   width: 100%;
   /*border: 1px solid red;*/
-  padding: 2rem 1rem 1rem;
+  padding: 3rem 1rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 p{
@@ -22,16 +27,23 @@ p{
 }
 
 nav.navigation{
+  position: fixed;
+  top: 0;
+  max-width: 1200px;
+  margin-top: 2rem;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+
+  /*border: 1px solid #000;*/
 }
 
 .navigation button{
   background-color: transparent;
   border: 0;
-
+  transform: scale(1.5);
+  color: black;
 }
 
 video{
@@ -104,7 +116,6 @@ video{
   display: flex;
   align-items: center;
   gap: 1rem;
-  white-space: nowrap;
   margin-bottom: 0;
   /*border: 1px solid #000;*/
   text-align: center;
