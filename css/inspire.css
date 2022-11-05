@@ -139,7 +139,7 @@ video{
 @media screen and (min-width: 700px) {
   .tools{
     /*border: 1px solid red;*/
-    max-width: 50rem;
+    /*max-width: 50rem;*/
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 1rem;
     /*align-self: flex-start;*/
@@ -162,9 +162,8 @@ video{
 .slider{
   margin-top: 2.5rem;
   overflow: hidden;
-  max-width: 30rem;
+  /*max-width: 30rem;*/
   width: 100%;
-  overflow: hidden;
 
   /*border: 1px solid yellow;*/
 }
@@ -176,13 +175,17 @@ video{
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(211, 211, 211, 0.62);
-  padding: 1rem;
 }
 
 .slider button{
   flex: 1;
   border: none;
   background-color: transparent;
+
+  /*border: 1px solid #000;*/
+  height: 100%;
+  padding: 1rem;
+
 }
 
 .slider button.active{
