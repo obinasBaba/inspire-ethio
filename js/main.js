@@ -1,21 +1,6 @@
 import gsap from 'gsap'
 
-let lastScrollTop = 0;
-const body = document.body;
 
-// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-  let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-
-  if (st > lastScrollTop){
-    console.log('down')
-  } else {
-    console.log('up')
-  }
-
-  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-
-});
 
 
 const infoBtn = document.querySelector('.slider .info-btn')
