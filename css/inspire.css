@@ -31,7 +31,14 @@ button{
   box-sizing: border-box;
   overflow: hidden;
 
-  padding: 3rem 1rem 8rem;
+  padding: 1rem 1rem 8rem;
+}
+
+@media screen and (min-width: 700px) {
+  .container{
+    padding: 3rem 1rem 8rem;
+
+  }
 }
 
 p{
@@ -41,16 +48,20 @@ p{
 nav.navigation{
   position: fixed;
   top: 0;
-  max-width: 1600px;
-  /*margin-top: 2rem;*/
-  padding-top: 1.5rem;
   display: flex;
-  width: 94%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   -webkit-backface-visibility: hidden;
   /*border: 1px solid #000;*/
   background-color: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 700px) {
+  nav.navigation{
+    padding: 0 4rem;
+  }
 }
 
 .navigation .nav-items{
@@ -81,7 +92,7 @@ nav.navigation{
 
 video{
   /*border: 1px solid #000;*/
-  width: 100%;
+  width: calc(100% + 2rem);
   margin-top: 5rem;
   /*max-width: 1600px;*/
 }
@@ -231,10 +242,11 @@ video{
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .item p{
-  margin-top: 0;
+  margin: 0;
 }
 
 
@@ -243,18 +255,40 @@ footer{
   bottom: 0;
   width: 100%;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid lightgray;
+  /*border-top: 1px solid lightgray;*/
   background-color: white;
-  padding: .5rem 2rem;
+
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.29);
+
+}
+
+footer .offer{
+  /*margin: 1rem 0;*/
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: .3rem 0;
+}
+
+footer > div{
+
+  padding: 1rem .5rem;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer button{
   border: none;
   color: white;
-  background-color: #0f6d9f;
-  padding: .6rem 1rem;
+  background-color: #44b7b7;
+  padding: .6rem 2rem;
+  border-radius: .4rem;
 
 }
 
