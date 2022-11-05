@@ -23,8 +23,7 @@ button{
 .container{
   width: 100%;
   /*border: 1px solid red;*/
-  padding: 3rem 1rem 1rem;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -32,6 +31,7 @@ button{
   box-sizing: border-box;
   overflow: hidden;
 
+  padding: 3rem 1rem 8rem;
 }
 
 p{
@@ -162,7 +162,7 @@ video{
 .slider{
   margin-top: 2.5rem;
   overflow: hidden;
-  /*max-width: 30rem;*/
+  max-width: 50rem;
   width: 100%;
 
   /*border: 1px solid yellow;*/
@@ -261,6 +261,17 @@ footer button{
 footer .text{
   display: flex;
   flex-flow: column;
+}
+
+footer .text > *{
+  font-size: .8rem;
+}
+
+
+@media screen and (min-width: 500px) {
+  footer .text > *{
+    /*display: none;*/
+  }
 }
 
 .text h4{
